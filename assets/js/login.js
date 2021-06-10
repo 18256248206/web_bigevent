@@ -47,7 +47,7 @@ $(function() {
             data: $(this).serialize(),
             success: function(res) {
                 if (res.status !== 0) {
-                    return layer.mag('登陆失败！')
+                    return layer.msg('登陆失败！')
                 }
                 layer.msg('登陆成功！')
                 localStorage.setItem('token', res.token)
